@@ -1,0 +1,15 @@
+def voto(idade):
+    from datetime import date
+    ano = date.today().year
+    #print(ano)
+    ida = ano - anonas
+    if ida < 16:
+        return f'com {ida} anos não pode votar'
+    elif ida == 16 and ida == 17 or ida >= 65:
+        return f'com {ida} anos o voto é opcional'
+    elif ida >= 18 and ida < 65:
+        return f'Com {ida} anos o voto é obrigatório'
+
+
+anonas = int(input('Em que ano a pessoa nasceu? '))
+print(voto(anonas))
